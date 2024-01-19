@@ -1,15 +1,6 @@
 
-var pass1 = "05/20/12"
-var pass = prompt('enter authentication passcode');
-  if (pass == pass1)
-  {
-  } else { 
-    window.location="https://xunlocknetworkenterprise.github.io/";
-  }
-const backgroundmusic = new Audio("https://xunlocknetworkenterprise.github.io/49%20-%20Mii%20Maker%20-%20Editing%20a%20Mii%20Gamepad.mp3")
-backgroundmusic.play();
-backgroundmusic.loop = true;
-if (alert(localStorage.getItem("theme")), null == localStorage.getItem("theme") && (localStorage.setItem("theme", "https://krownetkcolnux.github.io/css/clockstyle.css"), localStorage.setItem("facReset", "false")), (localStorage.getItem("theme").length < 7 || "true" == localStorage.getItem("facReset")) && (localStorage.setItem("theme", "https://krownetkcolnux.github.io/css/clockstyle.css"), localStorage.setItem("facReset", "false")), addTheme(localStorage.getItem("theme")), null == (apps = JSON.parse(localStorage.getItem("apps")))) {
+
+if (alert(localStorage.getItem("theme")), null == localStorage.getItem("theme") && (localStorage.setItem("theme", "https://fusion-softworks-llc.github.io/Fusion-Softworks-Dashboard/css/clockstyle.css"), localStorage.setItem("facReset", "false")), (localStorage.getItem("theme").length < 7 || "true" == localStorage.getItem("facReset")) && (localStorage.setItem("theme", "https://fusion-softworks-llc.github.io/Fusion-Softworks-Dashboard/css/clockstyle.css"), localStorage.setItem("facReset", "false")), addTheme(localStorage.getItem("theme")), null == (apps = JSON.parse(localStorage.getItem("apps")))) {
     localStorage.setItem("apps", JSON.stringify(new Array));
     var apps = new Array
 }
@@ -49,7 +40,7 @@ const menu = new Audio("https://bloxdeck.github.io/sounds/deck_ui_show_modal.wav
 function closeApp(e) {
   if (e == "games")
   {
-  backgroundmusic.play();
+
   }
     null != (e = document.getElementById(e)) ? ("IFRAME" == e.nodeName && (e.src = "about:blank"), e.style = "display: none;") : console.log("// ERROR \nApp of name does not exist")
 }
@@ -88,6 +79,16 @@ function addTheme(e) {
 
 function startLoop() {
     const e = new Date;
+    
+  fetch('https://api.github.com/repos/Fusion-Softworks-LLC/Fusion-Softworks-Dashboard/commits?per_page=1')
+  .then(res => res.json())
+  .then(res => {
+    document.getElementById('message').innerHTML = "Commit Message:"+res[0].commit.message
+    document.getElementById('author').innerHTML = "Author:"+res[0].commit.author.name
+        document.getElementById('comments').innerHTML = "Comments:"+res[0].commit.comment_count
+   document.getElementById('avatar').src = res[0].author.avatar_url
+  })
+
     let t = e.getHours(),
         a = e.getMinutes(),
         n = e.getSeconds();
@@ -103,7 +104,7 @@ function unhide() {
 }
 
 function factoryReset() {
-    confirm("Are you ABSOLUTELY SURE you want to factory reset Home Brew?\nAll your themes and apps (and some data) will be gone!") && (localStorage.setItem("apps", "[]"), localStorage.setItem("facReset", "true"), addTheme("https://krownetkcolnux.github.io/css/clockstyle.css"), document.location.reload())
+    confirm("Are you ABSOLUTELY SURE you want to factory reset Home Brew?\nAll your themes and apps (and some data) will be gone!") && (localStorage.setItem("apps", "[]"), localStorage.setItem("facReset", "true"), addTheme("https://fusion-softworks-llc.github.io/Fusion-Softworks-Dashboard/css/clockstyle.css"), document.location.reload())
 }
 
 function showMenu() {

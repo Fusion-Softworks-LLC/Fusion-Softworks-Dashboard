@@ -12,7 +12,26 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(86,45,253,1) 100%)
   color: whitesmoke;
   font-family: Roboto, Arial, sans-serif;
 }
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.container
+{
+   text-align: center;
+    margin: 0;
 
+background: rgb(71,34,195);
+background: radial-gradient(circle, rgba(71,34,195,1) 0%, rgba(45,140,253,1) 100%);
+  
+  display: grid;
+  place-items: center;
+   border-radius: 5px;
+  background-color: blue;
+  padding: 20px;
+}
 .main {
   padding: 3px;
   margin-bottom: 34px;
